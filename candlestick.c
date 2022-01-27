@@ -312,7 +312,7 @@ threadmain(int argc, char *argv[])
 		switch(alt(a)){
 		case 0:
 			if(ptinrect(m.xy, arear)){
-				n = ((m.xy.x - arear.min.x) / 6) - 1;
+				n = offset + ((m.xy.x - arear.min.x) / 6) - 1;
 				if(n > 0 && n < chart.nprices){
 					drawlegend(&chart.prices[n]);
 					l = 1;
